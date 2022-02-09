@@ -3,7 +3,7 @@ import { Image, StyleSheet, Text, TouchableOpacity, View } from "react-native";
 import react from "react";
 
 
-function Online() {
+function App() {
   return (
     <View style={styles.container}>
       <Text style={styles.header}>ONLINE SHOPPING</Text>
@@ -16,19 +16,26 @@ function Online() {
         This will help you when you have to speak about shopping in the future.
       </Text>
 
+    <View style={styles.imgcontainer}>
       <Image style={styles.img} source={require("./assets/1.png")} />
-
+      </View>
       <TouchableOpacity style={styles.button}>
-        <Text style={styles.btntext}>Next</Text>
+        <Text style={styles.btntext}>Get Started</Text>
       </TouchableOpacity>
+      
 
     <View style={styles.allcircle}>
     <View style={styles.circle}></View>
     <View style={styles.circ}></View>
     <View style={styles.circ}></View>
+    
     </View>
 
+    <View style={styles.foottext}>
     <Text style={styles.foot}>Skip</Text>
+    </View>
+    
+    
       <StatusBar style="auto" />
     </View>
   );
@@ -36,16 +43,19 @@ function Online() {
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
+    flex: 3,
     backgroundColor: "#fff",
-    marginTop: 25,
-    marginLeft: 20,
+    marginTop: 30,
+    paddingHorizontal: 16
+  },
+
+  imgcontainer: {
+    flex: 4
   },
 
   header: {
     fontSize: 25,
     fontWeight: "bold",
-    marginBottom: 10
   },
 
   img: {
@@ -62,6 +72,7 @@ const styles = StyleSheet.create({
     alignItems: "center",
     justifyContent: "center",
     borderRadius: 30,
+    marginTop: 50,
   },
 
   btntext: {
@@ -70,9 +81,10 @@ const styles = StyleSheet.create({
   },
 
   allcircle: {
+    flex: 1,
   flexDirection: "row",
   alignSelf: "center",
-  marginTop: 50,
+  marginTop: 30,
 
   },
 
@@ -89,16 +101,25 @@ const styles = StyleSheet.create({
     width: 10,
     backgroundColor: "grey",
     borderRadius: 20,
-    marginRight: 5
+    marginRight: 5,
   },
 
   foot: {
     fontSize: 18,
-    textAlign: "right",
-    marginRight: 30,
+  textAlign: "right",
     color: "grey"
-  }
+  },
+
+  leftfoot: {
+    fontSize: 18,
+    color: "grey",
+    marginLeft: 20, 
+  },
+
+  foottext: {
+    flex: 1
+  },
 });
 
 
-export default Online;
+export default App;
