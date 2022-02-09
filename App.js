@@ -6,7 +6,7 @@ import react from "react";
 function App() {
   return (
     <View style={styles.container}>
-      <Text style={styles.header}>ADD TO CHART</Text>
+      <Text style={styles.header}>PAYMENT SUCCEFUL</Text>
       <Text>
         When using shopping vocabulary you will most likely have to speak, doing
         an ESL shopping reading activity will help you learn the vocabulary.
@@ -16,20 +16,21 @@ function App() {
         This will help you when you have to speak about shopping in the future.
       </Text>
 
-      <Image style={styles.img} source={require("./assets/3.png")} />
+      <Image style={styles.img} source={require("./assets/2.png")} />
 
       <TouchableOpacity style={styles.button}>
         <Text style={styles.btntext}>Next</Text>
       </TouchableOpacity>
 
     <View style={styles.allcircle}>
-    <Text style={styles.leftfoot}>Previous</Text>
+    
+    <View style={styles.circ}></View>
     <View style={styles.circ}></View>
     <View style={styles.circle}></View>
 
-    <View style={styles.circ}></View>
-    <Text style={styles.foot}>Skip</Text>
+   
     </View>
+    <Text style={styles.leftfoot}>Previous</Text>
     
       <StatusBar style="auto" />
     </View>
@@ -103,8 +104,8 @@ const styles = StyleSheet.create({
 
   leftfoot: {
     fontSize: 18,
-   marginRight: 120,
-    color: "grey" 
+    color: "grey",
+    marginLeft: 20, 
   }
 });
 
