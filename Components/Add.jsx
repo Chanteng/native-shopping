@@ -3,7 +3,7 @@ import { Image, StyleSheet, Text, TouchableOpacity, View } from "react-native";
 import react from "react";
 
 
-function App() {
+function Add() {
   return (
     <View style={styles.container}>
       <Text style={styles.header}>ADD TO CHART</Text>
@@ -109,4 +109,4 @@ const styles = StyleSheet.create({
 });
 
 
-export default App;
+export default Add;
