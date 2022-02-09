@@ -40,7 +40,7 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: "#fff",
-    marginTop: 80,
+    marginTop: 25,
     marginLeft: 20,
   },
 
@@ -51,8 +51,8 @@ const styles = StyleSheet.create({
   },
 
   img: {
-    height: 450,
-    width: 300,
+    height: 300,
+    width: 150,
     alignSelf: "center",
   },
 
@@ -60,7 +60,7 @@ const styles = StyleSheet.create({
     backgroundColor: "#6C63FF",
     alignSelf: "center",
     height: 50,
-    width: 150,
+    width: 200,
     alignItems: "center",
     justifyContent: "center",
     borderRadius: 30,

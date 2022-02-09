@@ -16,21 +16,25 @@ function App() {
         This will help you when you have to speak about shopping in the future.
       </Text>
 
+    <View style={styles.imgcontainer}>
       <Image style={styles.img} source={require("./assets/2.png")} />
-
+      </View>
       <TouchableOpacity style={styles.button}>
-        <Text style={styles.btntext}>Next</Text>
+        <Text style={styles.btntext}>Get Started</Text>
       </TouchableOpacity>
+      
 
     <View style={styles.allcircle}>
     
     <View style={styles.circ}></View>
     <View style={styles.circ}></View>
     <View style={styles.circle}></View>
-
-   
     </View>
+
+    <View style={styles.foottext}>
     <Text style={styles.leftfoot}>Previous</Text>
+    </View>
+    
     
       <StatusBar style="auto" />
     </View>
@@ -39,21 +43,24 @@ function App() {
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
+    flex: 3,
     backgroundColor: "#fff",
-    marginTop: 80,
-    marginLeft: 20,
+    marginTop: 30,
+    paddingHorizontal: 16
+  },
+
+  imgcontainer: {
+    flex: 4
   },
 
   header: {
     fontSize: 25,
     fontWeight: "bold",
-    marginBottom: 10
   },
 
   img: {
-    height: 450,
-    width: 300,
+    height: 300,
+    width: 150,
     alignSelf: "center",
   },
 
@@ -61,10 +68,11 @@ const styles = StyleSheet.create({
     backgroundColor: "#6C63FF",
     alignSelf: "center",
     height: 50,
-    width: 150,
+    width: 200,
     alignItems: "center",
     justifyContent: "center",
     borderRadius: 30,
+    marginTop: 50,
   },
 
   btntext: {
@@ -73,9 +81,10 @@ const styles = StyleSheet.create({
   },
 
   allcircle: {
+    flex: 1,
   flexDirection: "row",
   alignSelf: "center",
-  marginTop: 50,
+  marginTop: 30,
 
   },
 
@@ -92,13 +101,12 @@ const styles = StyleSheet.create({
     width: 10,
     backgroundColor: "grey",
     borderRadius: 20,
-    marginRight: 5
+    marginRight: 5,
   },
 
   foot: {
     fontSize: 18,
-    // textAlign: "right",
-   marginLeft: 120,
+  // marginLeft: 120,
     color: "grey"
   },
 
@@ -106,7 +114,11 @@ const styles = StyleSheet.create({
     fontSize: 18,
     color: "grey",
     marginLeft: 20, 
-  }
+  },
+
+  foottext: {
+    flex: 1
+  },
 });
 
 
