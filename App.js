@@ -6,7 +6,7 @@ import react from "react";
 function App() {
   return (
     <View style={styles.container}>
-      <Text style={styles.header}>ONLINE SHOPPING</Text>
+        <Text style={styles.header}>ADD TO CHART</Text>
       <Text>
         When using shopping vocabulary you will most likely have to speak, doing
         an ESL shopping reading activity will help you learn the vocabulary.
@@ -17,7 +17,7 @@ function App() {
       </Text>
 
     <View style={styles.imgcontainer}>
-      <Image style={styles.img} source={require("./assets/1.png")} />
+      <Image style={styles.img} source={require("./assets/3.png")} />
       </View>
       <TouchableOpacity style={styles.button}>
         <Text style={styles.btntext}>Get Started</Text>
@@ -25,13 +25,14 @@ function App() {
       
 
     <View style={styles.allcircle}>
-    <View style={styles.circle}></View>
     <View style={styles.circ}></View>
+    <View style={styles.circle}></View>
     <View style={styles.circ}></View>
     
     </View>
 
     <View style={styles.foottext}>
+    <Text style={styles.leftfoot}>Previous</Text>
     <Text style={styles.foot}>Skip</Text>
     </View>
     
@@ -106,18 +107,18 @@ const styles = StyleSheet.create({
 
   foot: {
     fontSize: 18,
-  textAlign: "right",
-    color: "grey"
+    color: "grey",
+   marginLeft: 230,
   },
 
   leftfoot: {
     fontSize: 18,
     color: "grey",
-    marginLeft: 20, 
   },
 
   foottext: {
-    flex: 1
+    flex: 1,
+    flexDirection: "row"
   },
 });
 
