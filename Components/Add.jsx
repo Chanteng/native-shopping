@@ -23,7 +23,7 @@ function Add() {
       </TouchableOpacity>
 
     <View style={styles.allcircle}>
-    <Text style={styles.leftfoot}>Previous</Text>
+    
     <View style={styles.circ}></View>
     <View style={styles.circle}></View>
 
